@@ -31,6 +31,35 @@
             <h5 id="weekLabel" class="m-0">Current Week</h5>
             <button class="btn btn-secondary btn-sm" onclick="nextWeek()">Next Week →</button>
         </div>
+
+
+        <div class="card shadow-sm">
+            <div class="table-responsive">
+                <table class="table table-bordered align-middle text-center m-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th style="width: 25%; text-align: left;">Habit Name</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                            <th style="width: 15%;">Streak </th>
+                            <th style="width: 10%;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="habitTableBody">
+                        </tbody>
+                </table>
+            </div>
+            <div id="emptyState" class="text-center p-5 text-muted">
+                <h5>No habits added yet!</h5>
+                <p class="mb-0">Type a habit above and click 'Add Habit' to start tracking your routine.</p>
+            </div>
+        </div>
+        
     </div>
 
     <script src="app.js"></script>
